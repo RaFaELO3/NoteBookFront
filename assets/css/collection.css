@@ -41,9 +41,9 @@
     margin-bottom: 2.5rem;
 }
 
-.item-content{
+.item-content {
     text-align: center;
-    max-width:  460px;
+    max-width: 460px;
     margin: auto;
 }
 
@@ -52,12 +52,10 @@
     font-weight:700;
     margin-bottom: 1em;
 }
-
 .item-content-body{
     font-size:13px;
     line-height:24px;
 }
-
 .addToCartBtn{
     background-color:#7B8469;
     line-height:22px;
@@ -68,13 +66,11 @@
     border-radius: 30px;
 
 }
-
 .section-footer{
     background-image: url(../../images/collectionFooter.jpg);
     background-size:cover;
     background-position:center;
 }
-
 
 .footer-content{
     max-width:400px;
@@ -82,4 +78,16 @@
     margin:auto;
     padding: 60px 0;
     min-height: 350px;
+}
+
+@media only screen and (max-width: 992px){
+    .item-content-box{
+        padding:2rem;
+    }
+}
+
+@media only screen and (max-width: 767px){
+    .collection-item-right .item-content{
+        order: 1;
+    }
 }
