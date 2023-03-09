@@ -1,0 +1,111 @@
+@import url(core.css);
+
+.blog-page .page-title{
+    font-size: 20px;
+    color: var(--page-title-color);
+    text-transform: uppercase;
+    letter-spacing: .05em;
+    font-weight: 700;
+    margin: 40px 0;
+}
+
+.section-header{
+    padding:2rem 0;
+}
+
+.section-title span{
+    color: var(--page-title-color);
+    letter-spacing: .05em;
+    font-size: 21px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 0 24px;
+    position: relative;
+    z-index: 1;
+    background-color: var(--bs-white);
+}
+
+.section-title:before {
+    position: absolute;
+    content: "";
+    height: 1px;
+    background-color: #0e0e0e;
+    top: calc(50% - -3.5px);
+    left: 0;
+    right: 0;
+    width: 100%;
+}
+
+.blog-container{
+    padding:15px;
+    border: 2px solid var(--color-pink);
+    border-radius: 10px;
+}
+
+.blog-img-box{
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.count-box{
+    position: absolute;
+    right:0;
+    background-color: var(--color-pink);
+    padding:5px 9px;
+    color: var(--bs-white);
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.blog-image{
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.blog-title{
+    font-size:19px;
+}
+
+.blog-content{
+    line-height: 25px;
+    margin-bottom: 25px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    font-size:13px;
+    color: #3c3c3c;
+}
+
+.btn-read-more{
+    line-height: 21px;
+    outline: none;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-width: 100%;
+    transition: all 0.3s ease;
+    padding: 9px;
+    letter-spacing: 0;
+    font-family:var(--font-Poppins);
+    background: var(--bs-white);
+    color: var(--color-pink);
+    border-color: var(--color-light-pink);
+    min-width: 161px;
+    border-radius: 20px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+.btn-read-more:hover{
+    background: var(--color-pink);
+    color: var(--bs-white);
+    border-color: rgba(0,0,0,0);
+}
+
+.blog-date{
+    font-size: 13px;
+    line-height: 23px;
+    color: #708090;
+}

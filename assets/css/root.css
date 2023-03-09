@@ -4,6 +4,9 @@
     --font-Poppins:'Poppins',sans-serif;
     --font-Overpass:'Overpass',sans-serif;
     /* Colors */
+    --page-title-color:#232323;
+    --color-pink:#de94a5;
+    --color-light-pink:#ebbec8;
 }
 
 :root.dark{
