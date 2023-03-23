@@ -1,0 +1,146 @@
+@import url(core.css);
+
+header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    z-index: 999;
+}
+
+.header_top{
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+}
+
+.shopping_cart{
+    font-size: 22px;
+}
+
+.logo img {
+    width: 300px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    height: 5rem;
+    padding: 0 1rem;
+    margin: 0 auto;
+    z-index: 999;
+}
+
+.toggle_menu,
+.close_menu {
+    display: none;
+    cursor: pointer;
+}
+
+.nav_list {
+    display: flex;
+}
+
+.nav_item {
+    margin: 0 1.5rem;
+    padding: 1.4rem 0;
+    font-size: 14px;
+}
+
+.nav_link {
+    position: relative;
+    font-weight: 600;
+    color: #544756;
+}
+
+.nav_link::before {
+    content: '';
+    position: absolute;
+    width: 0%;
+    bottom: -20%;
+    height: 0.5px;
+    background-color: #db246d;
+    transition: 0.3s ease;
+}
+
+.nav_link:hover::before {
+    width: 100%;
+}
+
+.nav_link:hover {
+    color: var(--darkest_pink);
+    /* color: #a92ec8; */
+}
+
+.dropdown_icon {
+    font-size: 0.7rem;
+}
+
+.megamenu {
+    position: absolute;
+    padding-top: 1rem;
+    width: 100%;
+    top: 4rem;
+    left: 0;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    border-radius: 0 0 20px 20px;
+    box-shadow: 0 23px 23px -21px rgba(0, 0, 0, 0.25);
+    z-index: -99;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 2rem;
+}
+
+.megamenu_item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.header_megamenu {
+    font-weight: 600;
+    color: #a8a1b5;
+    margin-bottom: 1rem;
+}
+
+.menu_icon {
+    margin-right: 0.5rem;
+    font-size: 22px;
+}
+
+.megamenu_link a {
+    text-transform: capitalize;
+    font-weight: 500;
+    color: #000;
+}
+
+.megamenu_link a:hover {
+    color: var(--darker_pink);
+}
+
+.megamenu_link p {
+    font-size: 0.6875rem;
+    font-weight: 400;
+    color: #a8a1b5;
+}
+
+.megamenu.open {
+    visibility: visible;
+    opacity: 1;
+}
+
+.nav_item:hover .dropdown_icon {
+    transform: rotate(180deg);
+    transition: all 0.3s ease;
+}
