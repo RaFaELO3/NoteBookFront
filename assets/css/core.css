@@ -36,6 +36,10 @@ bg-main {
     background-color: var(--color-main);
 }
 
+.cursor-pointer {
+    cursor: pointer;
+}
+
 /* .section {
     padding: 2rem 0;
 } */

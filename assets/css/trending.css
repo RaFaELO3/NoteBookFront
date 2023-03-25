@@ -1,8 +1,8 @@
 @import url(media.css);
 
-a,
-a:hover,
-a:active {
+.slider_card a,
+.slider_card a:hover,
+.slider_card a:active {
     color: var(--color_title_pr);
     font-size: var(--font_size);
 }
