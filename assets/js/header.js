@@ -18,17 +18,20 @@ closeMenu.addEventListener("click", () => {
 
 let media = window.matchMedia("(max-width: 1200px)");
 
-if (media.matches) {
-  document.querySelector("nav").style.height = "4rem";
-  document.getElementById("navbar").style.display = "none";
-  document.querySelector(".navbar_responsive").style.display = "flex";
-}
-else {
-  // document.querySelector("nav").style.height = "8rem";
-  // document.getElementById("navbar").style.display = "block";
-  window.onscroll = function () {
-  scrollFunction();
-};
+function ChangeOfHeader() {
+  if (media.matches) {
+    document.querySelector("nav").style.height = "4rem";
+    document.getElementById("navbar").style.display = "none";
+    document.querySelector(".navbar_responsive").style.display = "flex";
+  }
+  else {
+    document.querySelector("nav").style.height = "8rem";
+    // document.getElementById("navbar").style.display = "block";
+    console.log("salam");
+    window.onscroll = function () {
+      scrollFunction();
+    };
+  }
 }
 
 function scrollFunction() {
@@ -46,3 +49,9 @@ function scrollFunction() {
     document.querySelector(".icons_scroll").style.top = "5rem";
   }
 }
+
+ChangeOfHeader();
+
+// window.addEventListener("resize", function () {
+//   console.log(window.innerWidth);
+// })
