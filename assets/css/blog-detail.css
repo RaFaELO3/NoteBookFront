@@ -16,12 +16,24 @@
     margin-bottom: 2.5rem;
 }
 
+.images img {
+    width: 736px;
+    object-fit: cover;
+    aspect-ratio: 1/1;
+}
+
 h1 {
     font-size: 34px;
     font-weight: 700;
     text-align: center;
 }
 
+.post-main-img,
+.related-post_img img {
+    width: 800px;
+    object-fit: cover;
+    aspect-ratio: 800/514;
+}
 
 .post-content {
     font-size: 18px;
@@ -83,12 +95,11 @@ h2 {
     color: var(--color_title_pr);
 }
 
-.desc{
+.desc {
     font-size: 14px;
     color: var(--color_blog);
 }
 
-.more{
+.more {
     color: var(--darkest_pink);
 }
-

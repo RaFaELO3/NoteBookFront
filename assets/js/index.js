@@ -16,7 +16,6 @@ tabs.forEach((tab, index) => {
 
 tabs[0].click();
 
-
 //------------- SLIDER 2023 PICKS-------------------//
 
 const slider_cards = document.querySelectorAll(".slider-card");
@@ -83,7 +82,6 @@ function checkArrowVisibility(pos) {
   }
 }
 
-
 //------------- SLIDER BLOG POSTS-------------------//
 
 const prev = document.querySelector(".prev");
@@ -126,6 +124,14 @@ function slider_loop(click) {
   if (widthOfBody < 1400) {
     slider.style.left = `${-counter * (box.offsetWidth + 64)}px`;
   } else {
-    slider.style.left = `${-counter * (box.offsetWidth + 128)}px`
+    slider.style.left = `${-counter * (box.offsetWidth + 128)}px`;
   }
 }
+
+// window.onresize = function () {
+//   slider.style.left = 0;
+//   counter = 0;
+//   for (card of slider_cards) {
+//     card.style.left = 0;
+//   }
+// };
