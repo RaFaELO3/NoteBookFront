@@ -2,7 +2,7 @@
 :root{
     --red : red;
     --poppins : 'Poppins', sans-serif;
-    --purple : #de94a5
+    --purple : #de94a5,
 }
 
 :root.dark{
