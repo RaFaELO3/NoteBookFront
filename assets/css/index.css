@@ -18,7 +18,7 @@ body {
 }
 
 .img-2 {
-   display: none;
+    display: none;
 }
 
 .sakura-text {
@@ -245,20 +245,20 @@ body {
 /*       Slider 2023 picks section start      */
 /* ========================================== */
 
+.slider_picks {
+    overflow: hidden;
+    padding: 2rem 1rem;
+}
+
 .slider {
     position: relative;
-    overflow: hidden;
-    padding: 1rem;
-    margin: 4rem auto;
-    width: 85%;
-    display: flex;
+    left: 0;
+    transition: 0.5s ease;
 }
 
 .slider-card {
     position: relative;
     left: 0;
-    
-    min-width: 23%;
     height: 23rem;
     background-color: var(--pink_opaque);
     color: var(--body-color);
@@ -426,6 +426,7 @@ body {
 
 .left {
     left: 1rem;
+    opacity: 0;
 }
 
 .right {
@@ -442,7 +443,7 @@ body {
     /* overflow: hidden; */
 }
 
-.containr{
+.containr {
     overflow: hidden;
 }
 

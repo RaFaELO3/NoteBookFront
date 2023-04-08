@@ -1,5 +1,19 @@
 @import url(core.css);
 
+body {
+    position: relative;
+}
+
+.overlay::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 0, 0, 0.3);
+    z-index: 999;
+    transition: 0.5s;
+}
+
 header {
     position: fixed;
     top: 0;
@@ -55,7 +69,7 @@ nav {
     transition: all 0.3s;
 }
 
-.navbar_responsive{
+.navbar_responsive {
     width: 100%;
     justify-content: space-between;
     padding: 0 2rem;
@@ -68,8 +82,8 @@ nav {
 }
 
 .toggle_menu,
-.close_menu{
-        cursor: pointer;
+.close_menu {
+    cursor: pointer;
 }
 
 .nav_list {
@@ -178,6 +192,6 @@ nav {
     transition: all 0.3s ease;
 }
 
-.overlap{
+.overlap {
     height: 8rem;
 }

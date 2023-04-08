@@ -1,10 +1,10 @@
-const prev = document.querySelector(".fa-arrow-left");
-const next = document.querySelector(".fa-arrow-right");
-const cards = document.querySelectorAll(".slider_card");
-const slider = document.querySelector(".slides");
-let box = document.querySelector(".slider_card");
-
-let counter = 0;
+const prev = document.querySelector(".fa-arrow-left"),
+  next = document.querySelector(".fa-arrow-right"),
+  cards = document.querySelectorAll(".slider_card"),
+  slider = document.querySelector(".slides");
+  
+let box = document.querySelector(".slider_card"),
+  counter = 0;
 
 prev.addEventListener("click", () => {
   counter--;
@@ -29,6 +29,6 @@ function slider_loop() {
 }
 
 window.onresize = function () {
-    slider.style.left = 0;
-    counter = 0;
-}
+  slider.style.left = 0;
+  counter = 0;
+};

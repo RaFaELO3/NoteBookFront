@@ -12,8 +12,11 @@ dropDown.addEventListener("click", () => {
 
 toggleMenu.addEventListener("click", () => {
   navMenu.classList.toggle("show_menu");
-  body.classList.add("overlay");
-  nav.style.position = "absolute";
+
+  setTimeout(function () {
+    body.classList.add("overlay");
+    nav.style.position = "absolute";
+  }, 400);
 });
 
 closeMenu.addEventListener("click", () => {

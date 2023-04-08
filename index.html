@@ -14,16 +14,17 @@
     <link rel="stylesheet" href="assets/libs/font-awesome/css/all.min.css">
     <link rel="stylesheet" href="assets/css/header.css">
     <link rel="stylesheet" href="assets/css/index.css">
+    <link rel="stylesheet" href="assets/css/header-media.css">
     <link rel="stylesheet" href="assets/css/media.css">
 </head>
 
-<body>
+<body id="body">
     <main>
         <header>
-            <nav>
+            <nav id="nav">
                 <div class="header_top" id="navbar">
                     <div class="logo">
-                        <a href="#">
+                        <a href="index.html">
                             <img src="https://cdn.shopify.com/s/files/1/2026/1775/files/notebook-therapy_5c35a485-856a-4245-9bb4-ff74a75bbf44.png?v=1649853296"
                                 alt="">
                         </a>
@@ -368,7 +369,7 @@
                             </div>
                         </div>
                     </div>
-                    <a href="#" id="loadMore" class="d-block text-center m-5 button">
+                    <a href="#" id="loadMore" class="d-block text-center my-5 button">
                         <span>Show More</span>
                     </a>
                 </div>
@@ -518,7 +519,7 @@
                         </div>
                     </div>
                 </div>
-                <a href="trending.html" class="d-block text-center m-5 button">
+                <a href="trending.html" class="d-block text-center my-5 button">
                     <span>See More</span>
                 </a>
             </section>
@@ -535,115 +536,134 @@
             </div>
 
             <!-- Section: Slider 2023 picks section start -->
-            <section class="slider">
-                <div class="slider-card">
-                    <div class="slider-card-content">
-                        <img src="assets/images/gel-pen.png" alt="" class="card-img">
-                        <h1 class="slider-card-title">HP Spectre x360 15</h1>
-                        <div class="slider-card-body">
-                            <div class="card-star">
-                                <span class="rating-value">4.5</span>
-                                <span class="star">&#9733;</span>
+            <section class="slider_picks position-relative">
+                <div class="row flex-nowrap slider">
+                    <div class="col-xl-3 col-lg-4 col-sm-6 content_width">
+                        <div class="slider-card">
+                            <div class="slider-card-content">
+                                <img src="assets/images/gel-pen.png" alt="" class="card-img">
+                                <h1 class="slider-card-title">HP Spectre x360 15</h1>
+                                <div class="slider-card-body">
+                                    <div class="card-star">
+                                        <span class="rating-value">4.5</span>
+                                        <span class="star">&#9733;</span>
+                                    </div>
+                                    <p class="card-price">$650.99</p>
+                                </div>
+                                <div class="slider-card-footer">
+                                    <a href="#">
+                                        <button class="btn btn-pink">Learn More</button>
+                                    </a>
+                                </div>
                             </div>
-                            <p class="card-price">$650.99</p>
                         </div>
-                        <div class="slider-card-footer">
-                            <a href="#">
-                                <button class="btn btn-pink">Learn More</button>
-                            </a>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-sm-6 content_width">
+                        <div class="slider-card">
+                            <div class="slider-card-content">
+                                <img src="assets/images/notebook_1.png" alt="" class="card-img">
+                                <h1 class="slider-card-title">HP Spectre x360 15</h1>
+                                <div class="slider-card-body">
+                                    <div class="card-star">
+                                        <span class="rating-value">4.5</span>
+                                        <span class="star">&#9733;</span>
+                                    </div>
+                                    <p class="card-price">$650.99</p>
+                                </div>
+                                <div class="slider-card-footer">
+                                    <a href="#">
+                                        <button class="btn btn-pink">Learn More</button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-sm-6 content_width">
+                        <div class="slider-card">
+                            <div class="slider-card-content">
+                                <img src="assets/images/pencil.png" alt="" class="card-img">
+                                <h1 class="slider-card-title">HP Spectre x360 15</h1>
+                                <div class="slider-card-body">
+                                    <div class="card-star">
+                                        <span class="rating-value">4.5</span>
+                                        <span class="star">&#9733;</span>
+                                    </div>
+                                    <p class="card-price">$650.99</p>
+                                </div>
+                                <div class="slider-card-footer">
+                                    <a href="#">
+                                        <button class="btn btn-pink">Learn More</button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-sm-6 content_width">
+                        <div class="slider-card">
+                            <div class="slider-card-content">
+                                <img src="assets/images/pencil_case.png" alt="" class="card-img">
+                                <h1 class="slider-card-title">HP Spectre x360 15</h1>
+                                <div class="slider-card-body">
+                                    <div class="card-star">
+                                        <span class="rating-value">4.5</span>
+                                        <span class="star">&#9733;</span>
+                                    </div>
+                                    <p class="card-price">$650.99</p>
+                                </div>
+                                <div class="slider-card-footer">
+                                    <a href="#">
+                                        <button class="btn btn-pink">Learn More</button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-sm-6 content_width">
+                        <div class="slider-card">
+                            <div class="slider-card-content">
+                                <img src="assets/images/gel-pen.png" alt="" class="card-img">
+                                <h1 class="slider-card-title">HP Spectre x360 15</h1>
+                                <div class="slider-card-body">
+                                    <div class="card-star">
+                                        <span class="rating-value">4.5</span>
+                                        <span class="star">&#9733;</span>
+                                    </div>
+                                    <p class="card-price">$650.99</p>
+                                </div>
+                                <div class="slider-card-footer">
+                                    <a href="#">
+                                        <button class="btn btn-pink">Learn More</button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-sm-6 content_width">
+                        <div class="slider-card">
+                            <div class="slider-card-content">
+                                <img src="assets/images/notebook_1.png" alt="" class="card-img">
+                                <h1 class="slider-card-title">HP Spectre x360 15</h1>
+                                <div class="slider-card-body">
+                                    <div class="card-star">
+                                        <span class="rating-value">4.5</span>
+                                        <span class="star">&#9733;</span>
+                                    </div>
+                                    <p class="card-price">$650.99</p>
+                                </div>
+                                <div class="slider-card-footer">
+                                    <a href="#">
+                                        <button class="btn btn-pink">Learn More</button>
+                                    </a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="slider-card">
-                    <div class="slider-card-content">
-                        <img src="assets/images/notebook_1.png" alt="" class="card-img">
-                        <h1 class="slider-card-title">HP Spectre x360 15</h1>
-                        <div class="slider-card-body">
-                            <div class="card-star">
-                                <span class="rating-value">4.5</span>
-                                <span class="star">&#9733;</span>
-                            </div>
-                            <p class="card-price">$650.99</p>
-                        </div>
-                        <div class="slider-card-footer">
-                            <a href="#">
-                                <button class="btn btn-pink">Learn More</button>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="slider-card">
-                    <div class="slider-card-content">
-                        <img src="assets/images/pencil.png" alt="" class="card-img">
-                        <h1 class="slider-card-title">HP Spectre x360 15</h1>
-                        <div class="slider-card-body">
-                            <div class="card-star">
-                                <span class="rating-value">4.5</span>
-                                <span class="star">&#9733;</span>
-                            </div>
-                            <p class="card-price">$650.99</p>
-                        </div>
-                        <div class="slider-card-footer">
-                            <a href="#">
-                                <button class="btn btn-pink">Learn More</button>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="slider-card">
-                    <div class="slider-card-content">
-                        <img src="assets/images/pencil_case.png" alt="" class="card-img">
-                        <h1 class="slider-card-title">HP Spectre x360 15</h1>
-                        <div class="slider-card-body">
-                            <div class="card-star">
-                                <span class="rating-value">4.5</span>
-                                <span class="star">&#9733;</span>
-                            </div>
-                            <p class="card-price">$650.99</p>
-                        </div>
-                        <div class="slider-card-footer">
-                            <a href="#">
-                                <button class="btn btn-pink">Learn More</button>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="slider-card">
-                    <div class="slider-card-content">
-                        <img src="assets/images/gel-pen.png" alt="" class="card-img">
-                        <h1 class="slider-card-title">HP Spectre x360 15</h1>
-                        <div class="slider-card-body">
-                            <div class="card-star">
-                                <span class="rating-value">4.5</span>
-                                <span class="star">&#9733;</span>
-                            </div>
-                            <p class="card-price">$650.99</p>
-                        </div>
-                        <div class="slider-card-footer">
-                            <a href="#">
-                                <button class="btn btn-pink">Learn More</button>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="slider-card">
-                    <div class="slider-card-content">
-                        <img src="assets/images/notebook_1.png" alt="" class="card-img">
-                        <h1 class="slider-card-title">HP Spectre x360 15</h1>
-                        <div class="slider-card-body">
-                            <div class="card-star">
-                                <span class="rating-value">4.5</span>
-                                <span class="star">&#9733;</span>
-                            </div>
-                            <p class="card-price">$650.99</p>
-                        </div>
-                        <div class="slider-card-footer">
-                            <a href="#">
-                                <button class="btn btn-pink">Learn More</button>
-                            </a>
-                        </div>
-                    </div>
-                </div>
+
+
+
+
+
 
                 <span class="arrow left">&#129120;</span>
                 <span class="arrow right">&#129122;</span>
