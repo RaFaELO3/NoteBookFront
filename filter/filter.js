@@ -7,18 +7,15 @@ btns.forEach((btn , btnIndex)=>{
         hiddens.forEach((hidden , hiddenIndex)=>{
             if(btnIndex === hiddenIndex){
                 hidden.classList.toggle("block")
+
             }
         })
     })
 })
 
-
-
-// klikOlunacaqElement.forEach(function (parametr){
-//     parametr.addEventListener("click", function (plus){
-//        plus.currentTarget.parentElement.nextElementSibling.classList.toggle("block");
-//     })
-
-   
-
-// })
+// Click filter
+const filterBtn = document.querySelector("#filterBtn")
+const hiddenSidebar = document.querySelector(".hiddenSidebar")
+filterBtn.addEventListener("click" , ()=>{
+    hiddenSidebar.classList.toggle("block")
+})
