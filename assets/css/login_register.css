@@ -7,10 +7,28 @@ html {
 
 a {
     text-decoration: none;
+    color: var(--darkest_pink);
 }
 
-a:hover{
+a:hover {
     text-decoration: underline;
+    color: var(--darkest_pink);
+}
+
+.btn-pink {
+    --bs-btn-color: #fff;
+    --bs-btn-bg: var(--darkest_pink);
+    --bs-btn-border-color: var(--darkest_pink);
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #ce4857;
+    --bs-btn-hover-border-color: #fb4466;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: #ca0a5d;
+    --bs-btn-active-border-color: rgb(238, 51, 160);
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #fff;
+    --bs-btn-disabled-bg: var(--darkest_pink);
+    --bs-btn-disabled-border-color: var(--darkest_pink);
 }
 
 .col-lg-4 {
@@ -117,13 +135,13 @@ body {
 }
 
 input,
-.form-control:focus{
+.form-control:focus {
     outline: none;
     outline-width: 0;
     outline-color: transparent;
     box-shadow: none;
     outline-style: none;
-        caret-color: #6c7293;
+    caret-color: #6c7293;
 }
 
 .form-check {
@@ -174,12 +192,11 @@ input,
 .auth .sign-up {
     font-size: 0.875rem;
     text-align: center;
-    margin-top: 30px;
     margin-bottom: 0;
 }
 
 .auth .sign-up a {
-    color: #0090e7;
+    color: var(--darkest_pink);
 }
 
 .auth .terms {
@@ -191,5 +208,5 @@ input,
 
 .auth .terms a {
     text-decoration: underline;
-    caret-shape:auto;
+    caret-shape: auto;
 }
