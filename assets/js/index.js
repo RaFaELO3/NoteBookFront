@@ -30,7 +30,6 @@ let content = document.querySelector(".content_width"),
 
 if (window.matchMedia("(min-width: 1200px)").matches) {
   minusSlide = 4;
-  if()
 } else if (window.matchMedia("(min-width: 992px)").matches) {
   minusSlide = 3;
 } else if (window.matchMedia("(min-width: 576px)").matches) {

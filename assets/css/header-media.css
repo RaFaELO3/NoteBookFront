@@ -81,6 +81,13 @@
     }
 }
 
+@media (max-width: 992px) {
+    .icons i {
+        font-size: 18px;
+    }
+
+}
+
 @media (max-width: 576px) {
     .navbar_responsive {
         padding: 0rem;
