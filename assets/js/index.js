@@ -30,6 +30,7 @@ let content = document.querySelector(".content_width"),
 
 if (window.matchMedia("(min-width: 1200px)").matches) {
   minusSlide = 4;
+  if()
 } else if (window.matchMedia("(min-width: 992px)").matches) {
   minusSlide = 3;
 } else if (window.matchMedia("(min-width: 576px)").matches) {
@@ -131,6 +132,7 @@ window.onresize = function () {
     minusSlide = 1;
   }
 
+  widthOfBody = document.body.clientWidth;
   slider.style.left = 0;
   counter = 0;
 
@@ -141,7 +143,8 @@ window.onresize = function () {
 
   if (widthOfBody < 1400) {
     slider.style.left = `${-counter * (box.offsetWidth + 64)}px`;
-  } else {
+  }
+  else {
     slider.style.left = `${-counter * (box.offsetWidth + 128)}px`;
   }
 };
