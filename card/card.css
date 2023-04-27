@@ -7,7 +7,7 @@ h1{
 
 }
 .purple{
-    color: var(--purple);
+    color: #de94a5;
 }
 .product-title svg{
     color: #F5C542;
@@ -22,18 +22,18 @@ h1{
     border-radius: 50%;
 }
 .submit button{
-    border: 1px solid var(--purple);
-    background-color: var(--purple);
+    border: 1px solid #de94a5;
+    background-color: #de94a5;
     transition: 0.5s;
     letter-spacing: 0.1cm;
 }
 .submit button:hover{
     background-color: white;
-    color: var(--purple) !important;
+    color: #de94a5 !important;
 }
 
 .text-purple{
-    color: var(--purple);
+    color: #de94a5;
 }
 
 ul li {
@@ -190,5 +190,25 @@ ul li {
     flex-wrap: nowrap !important;
     position: relative;
     left: 0;
+   }
+
+   .favbtn{
+    width: 50px;
+    border: 0;
+    background: none;
+    position: relative !important;
+    top: 0;
+   }
+   .fav{
+    color: #de94a5;
+    padding: 13px;
+    border: 1px solid #dbdbdb;
+    border-radius: 50%;
+    font-size: 18px;
+    position: absolute;
+    display: none !important;
+   }
+   .show{
+    display: block !important;
    }
     
